@@ -41,5 +41,6 @@ class TaskUpdateApplications(models.Model):
 class TaskUpdateLog(models.Model):
     task = models.ForeignKey(Tasks, on_delete=models.CASCADE)
     message = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
     
     
